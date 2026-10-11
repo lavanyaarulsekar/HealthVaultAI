@@ -1,0 +1,880 @@
+/* =========================================
+   HEALTHVAULT MEDICAL RECORDS
+   Deep Teal + Ivory + Mint
+========================================= */
+
+.medical-records-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f6f7f2;
+  color: #173f42;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.records-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: #0d4f50;
+  color: white;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+/* BRAND */
+
+.records-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.records-brand > span > span {
+  color: #9de3c1;
+}
+
+.records-brand-icon {
+  width: 39px;
+  height: 39px;
+  border-radius: 11px;
+  background: #9de3c1;
+  color: #0d4f50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.records-nav {
+  margin-top: 48px;
+}
+
+.records-nav-title {
+  padding: 0 13px;
+  margin-bottom: 12px;
+  color: rgba(255,255,255,0.38);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.records-tools-title {
+  margin-top: 35px;
+}
+
+.records-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  height: 46px;
+  padding: 0 13px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  color: rgba(255,255,255,0.67);
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.25s;
+}
+
+.records-nav-item span {
+  width: 20px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.records-nav-item:hover {
+  background: rgba(157,227,193,0.08);
+  color: white;
+}
+
+.records-nav-item.active {
+  background: rgba(157,227,193,0.14);
+  color: #9de3c1;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   SIDEBAR BOTTOM
+========================================= */
+
+.records-sidebar-bottom {
+  margin-top: auto;
+  border-top: 1px solid rgba(255,255,255,0.09);
+  padding-top: 18px;
+}
+
+.records-home-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 13px;
+  color: rgba(255,255,255,0.58);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.records-home-link:hover {
+  color: #9de3c1;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.medical-records-main {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  padding: 40px 48px 60px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.records-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.records-page-label {
+  color: #4b9b83;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 8px;
+}
+
+.records-page-header h1 {
+  color: #123f43;
+  font-size: 34px;
+  letter-spacing: -1px;
+}
+
+.records-page-header p:last-child {
+  color: #718180;
+  font-size: 13px;
+  margin-top: 7px;
+}
+
+.records-back-button {
+  padding: 10px 15px;
+  border: 1px solid #dce5df;
+  border-radius: 9px;
+  background: #fffdf8;
+  color: #315d5d;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.records-back-button:hover {
+  border-color: #9bcbb7;
+  color: #0d4f50;
+}
+
+
+/* =========================================
+   UPLOAD ACTION CARD
+========================================= */
+
+.records-action-card {
+  background: #0d4f50;
+  border-radius: 17px;
+  padding: 25px 27px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.records-action-card::after {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  right: -120px;
+  top: -150px;
+  background: rgba(157,227,193,0.07);
+}
+
+.records-action-content {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  position: relative;
+  z-index: 2;
+}
+
+.records-upload-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(157,227,193,0.12);
+  color: #9de3c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.records-action-content > div:last-child {
+  max-width: 600px;
+}
+
+.records-action-content span {
+  color: #9de3c1;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.records-action-content h2 {
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.records-action-content p {
+  color: rgba(255,255,255,0.62);
+  font-size: 10px;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+.upload-record-button {
+  position: relative;
+  z-index: 2;
+  border: none;
+  border-radius: 9px;
+  background: #9de3c1;
+  color: #0d4f50;
+  padding: 12px 18px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =========================================
+   TOOLBAR
+========================================= */
+
+.records-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.records-search {
+  flex: 1;
+  max-width: 600px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 13px;
+  background: #fffdf8;
+  border: 1px solid #dfe6e0;
+  border-radius: 10px;
+}
+
+.records-search span {
+  color: #81918c;
+  font-size: 18px;
+}
+
+.records-search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #315456;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.records-search input::placeholder {
+  color: #a4afac;
+}
+
+.records-filter {
+  height: 44px;
+  padding: 0 13px;
+  border: 1px solid #dfe6e0;
+  border-radius: 10px;
+  background: #fffdf8;
+  color: #526c6a;
+  font-family: inherit;
+  font-size: 11px;
+  outline: none;
+}
+
+
+/* =========================================
+   RECORD SUMMARY
+========================================= */
+
+.record-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.record-summary > div {
+  background: #fffdf8;
+  border: 1px solid #e3e8e1;
+  border-radius: 13px;
+  padding: 17px 19px;
+}
+
+.record-summary span {
+  display: block;
+  color: #83918e;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.record-summary strong {
+  display: block;
+  color: #123f43;
+  font-size: 23px;
+  margin-top: 5px;
+}
+
+
+/* =========================================
+   RECORD LIST
+========================================= */
+
+.records-list-card {
+  background: #fffdf8;
+  border: 1px solid #e3e8e1;
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.records-list-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.records-list-header > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.records-list-header > div span {
+  color: #4b9b83;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.records-list-header h2 {
+  color: #173f42;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.records-count {
+  color: #8b9996;
+  font-size: 10px;
+}
+
+
+/* =========================================
+   MEDICAL RECORD ITEM
+========================================= */
+
+.medical-record-item {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid #edf0ed;
+}
+
+.medical-record-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.lab-icon {
+  background: #e5f2ed;
+  color: #3f9175;
+}
+
+.prescription-icon {
+  background: #e5eff2;
+  color: #397b82;
+}
+
+.scan-icon {
+  background: #f0ece1;
+  color: #9a8550;
+}
+
+.report-icon {
+  background: #ece9f0;
+  color: #756583;
+}
+
+.medical-record-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.medical-record-info h3 {
+  color: #315456;
+  font-size: 12px;
+}
+
+.medical-record-info p {
+  color: #73827f;
+  font-size: 10px;
+}
+
+.medical-record-info span {
+  color: #a0aaa7;
+  font-size: 9px;
+  margin-top: 2px;
+}
+
+.medical-record-type {
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #e9f4ed;
+  color: #4b9b83;
+  font-size: 8px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.record-view-button {
+  border: 1px solid #d9e3dd;
+  border-radius: 8px;
+  background: #fffdf8;
+  color: #4b9b83;
+  padding: 8px 11px;
+  font-size: 9px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.record-view-button:hover {
+  background: #e9f4ed;
+  border-color: #b9d7c8;
+}
+
+
+/* =========================================
+   SECURITY NOTE
+========================================= */
+
+.records-security-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 20px 0 5px;
+}
+
+.records-security-note span {
+  font-size: 14px;
+}
+
+.records-security-note p {
+  color: #8a9895;
+  font-size: 9px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+
+  .record-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .records-action-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .upload-record-button {
+    margin-left: 69px;
+  }
+}
+
+
+@media (max-width: 850px) {
+
+  .records-sidebar {
+    width: 70px;
+    padding: 25px 10px;
+  }
+
+  .records-brand {
+    justify-content: center;
+    padding: 8px 0;
+  }
+
+  .records-brand > span,
+  .records-nav-title {
+    display: none;
+  }
+
+  .records-nav-item {
+    justify-content: center;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .records-nav-item span {
+    font-size: 18px;
+  }
+
+  .records-home-link {
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 0;
+  }
+
+  .records-home-link span {
+    font-size: 18px;
+  }
+
+  .medical-records-main {
+    width: calc(100% - 70px);
+    margin-left: 70px;
+    padding: 30px 22px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .records-page-header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .records-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .records-search {
+    max-width: none;
+  }
+
+  .record-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .medical-record-item {
+    align-items: flex-start;
+    padding: 16px 0;
+  }
+
+  .medical-record-type {
+    display: none;
+  }
+
+  .record-view-button {
+    align-self: center;
+  }
+
+  .medical-records-main {
+    padding: 25px 15px;
+  }
+}
+
+/* =========================================
+   MEDICAL RECORD FORM
+========================================= */
+
+.record-form-card {
+  background: #fffdf8;
+  border: 1px solid #e3e8e1;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(13, 79, 80, 0.05);
+}
+
+.record-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.record-form-header span {
+  color: #4b9b83;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.record-form-header h2 {
+  color: #173f42;
+  font-size: 19px;
+  margin-top: 5px;
+}
+
+.record-form-close {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: #eef3ef;
+  color: #526c6a;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.record-form-close:hover {
+  background: #e5eee9;
+}
+
+.record-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.record-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.record-form-group label {
+  color: #526c6a;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.record-form-group input,
+.record-form-group select {
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #dfe6e0;
+  border-radius: 9px;
+  background: #fff;
+  color: #315456;
+  font-family: inherit;
+  font-size: 11px;
+  outline: none;
+}
+
+.record-form-group input:focus,
+.record-form-group select:focus {
+  border-color: #9bcbb7;
+  box-shadow: 0 0 0 3px rgba(157, 227, 193, 0.12);
+}
+
+.save-record-button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 9px;
+  background: #0d4f50;
+  color: white;
+  padding: 11px 18px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.save-record-button:hover {
+  background: #126365;
+}
+
+
+/* =========================================
+   DELETE BUTTON
+========================================= */
+
+.record-delete-button {
+  border: 1px solid #ead9d5;
+  border-radius: 8px;
+  background: #fffaf8;
+  color: #a2675d;
+  padding: 8px 10px;
+  font-size: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.record-delete-button:hover {
+  background: #f8ebe7;
+  border-color: #dfc3bd;
+}
+
+
+/* =========================================
+   NO RECORDS
+========================================= */
+
+.no-records {
+  text-align: center;
+  padding: 45px 20px;
+  border-top: 1px solid #edf0ed;
+}
+
+.no-records div {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.no-records h3 {
+  color: #315456;
+  font-size: 13px;
+}
+
+.no-records p {
+  color: #8a9895;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+
+/* =========================================
+   RECORD DETAILS MODAL
+========================================= */
+
+.record-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 79, 80, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.record-modal {
+  width: 100%;
+  max-width: 470px;
+  background: #fffdf8;
+  border-radius: 17px;
+  padding: 28px;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(13, 79, 80, 0.2);
+}
+
+.record-modal-close {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: #eef3ef;
+  color: #526c6a;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.record-modal-label {
+  color: #4b9b83;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.record-modal h2 {
+  color: #173f42;
+  font-size: 21px;
+  margin-top: 7px;
+  padding-right: 35px;
+}
+
+.record-modal-info {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e8ece8;
+}
+
+.record-modal-info p {
+  color: #718180;
+  font-size: 11px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.record-modal-info strong {
+  color: #315456;
+}
+
+
+/* =========================================
+   RESPONSIVE FORM
+========================================= */
+
+@media (max-width: 600px) {
+
+  .record-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .medical-record-item {
+    flex-wrap: wrap;
+  }
+
+  .record-delete-button {
+    margin-left: 57px;
+  }
+
+  .record-modal {
+    padding: 23px;
+  }
+}

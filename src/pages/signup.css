@@ -1,0 +1,435 @@
+/* =========================================
+   HEALTHVAULT SIGNUP PAGE
+========================================= */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f8f6ee;
+}
+
+/* =========================================
+   LEFT SIDE
+========================================= */
+
+.auth-left {
+  width: 48%;
+  min-height: 100vh;
+  background: #0d4f50;
+  color: white;
+  padding: 40px 60px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-left::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(157, 227, 193, 0.1);
+  top: -170px;
+  right: -170px;
+}
+
+.auth-left::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(157, 227, 193, 0.07);
+  bottom: -140px;
+  left: -100px;
+}
+
+/* =========================================
+   BRAND
+========================================= */
+
+.auth-brand {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.auth-brand:hover {
+  color: white;
+}
+
+.auth-brand .brand-icon {
+  background: #9de3c1;
+  color: #0d4f50;
+}
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.auth-message {
+  position: relative;
+  z-index: 2;
+  margin: auto 0;
+  max-width: 550px;
+}
+
+.auth-shield {
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  background: rgba(157, 227, 193, 0.13);
+  border: 1px solid rgba(157, 227, 193, 0.25);
+  color: #9de3c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 28px;
+}
+
+.auth-message h1 {
+  font-size: clamp(40px, 4vw, 60px);
+  line-height: 1.06;
+  letter-spacing: -2px;
+  margin-bottom: 22px;
+}
+
+.auth-message h1 span {
+  color: #9de3c1;
+}
+
+.auth-message p {
+  max-width: 470px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.auth-benefits {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.auth-benefits div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+}
+
+.auth-benefits span {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: rgba(157, 227, 193, 0.15);
+  color: #9de3c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+}
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.auth-right {
+  width: 52%;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f6ee;
+  position: relative;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.auth-card {
+  width: 100%;
+  max-width: 470px;
+  padding: 42px;
+  border-radius: 22px;
+  background: #fffdf7;
+  border: 1px solid #e3e8e1;
+  box-shadow: 0 20px 55px rgba(13, 79, 80, 0.1);
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.auth-header {
+  margin-bottom: 27px;
+}
+
+.auth-label {
+  color: #4b9b83;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.auth-header h2 {
+  color: #123f43;
+  font-size: 30px;
+  letter-spacing: -0.7px;
+  margin-top: 10px;
+}
+
+.auth-header p {
+  color: #718180;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.input-group {
+  margin-bottom: 17px;
+}
+
+.input-group label {
+  display: block;
+  color: #315d5d;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 47px;
+  padding: 0 14px;
+  border: 1px solid #d5e0da;
+  border-radius: 10px;
+  outline: none;
+  background: white;
+  color: #123f43;
+  font-family: inherit;
+  font-size: 13px;
+  transition: 0.25s;
+}
+
+.input-group input::placeholder {
+  color: #a5b2af;
+}
+
+.input-group input:focus {
+  border-color: #4b9b83;
+  box-shadow: 0 0 0 3px rgba(75, 155, 131, 0.1);
+}
+
+/* =========================================
+   TERMS
+========================================= */
+
+.terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 5px 0 20px;
+  color: #718180;
+  font-size: 12px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.terms input {
+  width: 15px;
+  height: 15px;
+  margin-top: 1px;
+  accent-color: #4b9b83;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   SUBMIT
+========================================= */
+
+.auth-submit {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: #0d4f50;
+  color: white;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.25s;
+}
+
+.auth-submit:hover {
+  background: #123f43;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(13, 79, 80, 0.16);
+}
+
+.auth-submit span {
+  font-size: 18px;
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 22px 0;
+  color: #a1afaa;
+  font-size: 10px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e0e6e1;
+}
+
+/* =========================================
+   GOOGLE
+========================================= */
+
+.google-btn {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #d5e0da;
+  border-radius: 10px;
+  background: white;
+  color: #315d5d;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.25s;
+}
+
+.google-btn:hover {
+  background: #f5f8f5;
+  border-color: #bfcfc7;
+}
+
+.google-btn span {
+  font-size: 17px;
+  font-weight: 700;
+  color: #4285f4;
+}
+
+/* =========================================
+   LOGIN LINK
+========================================= */
+
+.auth-switch {
+  text-align: center;
+  color: #718180;
+  font-size: 12px;
+  margin-top: 21px;
+}
+
+.auth-switch a {
+  color: #4b9b83;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   BACK HOME
+========================================= */
+
+.back-home {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  color: #4b9b83;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.back-home:hover {
+  color: #0d4f50;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .auth-page {
+    flex-direction: column;
+  }
+
+  .auth-left {
+    width: 100%;
+    min-height: 430px;
+    padding: 30px;
+  }
+
+  .auth-message {
+    margin-top: 55px;
+  }
+
+  .auth-right {
+    width: 100%;
+    min-height: auto;
+    padding: 30px 20px;
+  }
+
+  .auth-card {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .auth-left {
+    min-height: 390px;
+  }
+
+  .auth-message h1 {
+    font-size: 36px;
+  }
+
+  .auth-message p {
+    font-size: 14px;
+  }
+
+  .auth-card {
+    padding: 28px 20px;
+  }
+}

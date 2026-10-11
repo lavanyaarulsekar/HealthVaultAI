@@ -1,0 +1,520 @@
+/* =========================================
+   HEALTHVAULT HEALTH PROFILE
+   Deep Teal + Ivory + Mint
+========================================= */
+
+.health-profile-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f6f7f2;
+  color: #173f42;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.profile-sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background: #0d4f50;
+  color: white;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+/* BRAND */
+
+.profile-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.profile-brand > span > span {
+  color: #9de3c1;
+}
+
+.profile-brand-icon {
+  width: 39px;
+  height: 39px;
+  border-radius: 11px;
+  background: #9de3c1;
+  color: #0d4f50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.profile-nav {
+  margin-top: 48px;
+}
+
+.profile-nav-title {
+  padding: 0 13px;
+  margin-bottom: 12px;
+  color: rgba(255,255,255,0.38);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.profile-tools-title {
+  margin-top: 35px;
+}
+
+.profile-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  height: 46px;
+  padding: 0 13px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  color: rgba(255,255,255,0.67);
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.25s;
+}
+
+.profile-nav-item span {
+  width: 20px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.profile-nav-item:hover {
+  background: rgba(157,227,193,0.08);
+  color: white;
+}
+
+.profile-nav-item.active {
+  background: rgba(157,227,193,0.14);
+  color: #9de3c1;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   SIDEBAR BOTTOM
+========================================= */
+
+.profile-sidebar-bottom {
+  margin-top: auto;
+  border-top: 1px solid rgba(255,255,255,0.09);
+  padding-top: 18px;
+}
+
+.profile-home-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 13px;
+  color: rgba(255,255,255,0.58);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.profile-home-link:hover {
+  color: #9de3c1;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.health-profile-main {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  padding: 40px 48px 60px;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.profile-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.profile-page-label {
+  color: #4b9b83;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 8px;
+}
+
+.profile-page-header h1 {
+  color: #123f43;
+  font-size: 34px;
+  letter-spacing: -1px;
+}
+
+.profile-page-header p:last-child {
+  color: #718180;
+  font-size: 13px;
+  margin-top: 7px;
+}
+
+.profile-back-button {
+  padding: 10px 15px;
+  border: 1px solid #dce5df;
+  border-radius: 9px;
+  background: #fffdf8;
+  color: #315d5d;
+  text-decoration: none;
+  font-size: 11px;
+  transition: 0.25s;
+}
+
+.profile-back-button:hover {
+  border-color: #9bcbb7;
+  color: #0d4f50;
+}
+
+
+/* =========================================
+   PROFILE OVERVIEW
+========================================= */
+
+.profile-overview-card {
+  background: #0d4f50;
+  border-radius: 17px;
+  padding: 27px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-overview-card::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(157,227,193,0.07);
+  right: -120px;
+  top: -150px;
+}
+
+.profile-avatar-large {
+  width: 68px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: #9de3c1;
+  color: #0d4f50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.profile-overview-info {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.profile-member-label {
+  color: #9de3c1;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.profile-overview-info h2 {
+  font-size: 23px;
+  margin-top: 5px;
+}
+
+.profile-overview-info p {
+  color: rgba(255,255,255,0.63);
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.edit-profile-button {
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(157,227,193,0.3);
+  background: rgba(157,227,193,0.1);
+  color: #9de3c1;
+  padding: 10px 15px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+
+/* =========================================
+   HEALTH SECTIONS
+========================================= */
+
+.health-section {
+  background: #fffdf8;
+  border: 1px solid #e3e8e1;
+  border-radius: 16px;
+  padding: 26px;
+  margin-bottom: 18px;
+}
+
+.health-section-header {
+  margin-bottom: 23px;
+}
+
+.health-section-header span {
+  color: #4b9b83;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.health-section-header h2 {
+  color: #173f42;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.health-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.health-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.health-input-group label,
+.health-textarea-group label {
+  color: #315d5d;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.health-input-group input,
+.health-input-group select,
+.health-textarea-group textarea {
+  width: 100%;
+  border: 1px solid #d8e2dc;
+  border-radius: 9px;
+  background: white;
+  color: #315456;
+  font-family: inherit;
+  font-size: 12px;
+  outline: none;
+  transition: 0.25s;
+}
+
+.health-input-group input,
+.health-input-group select {
+  height: 45px;
+  padding: 0 13px;
+}
+
+.health-input-group input::placeholder,
+.health-textarea-group textarea::placeholder {
+  color: #a3afac;
+}
+
+.health-input-group input:focus,
+.health-input-group select:focus,
+.health-textarea-group textarea:focus {
+  border-color: #4b9b83;
+  box-shadow: 0 0 0 3px rgba(75,155,131,0.09);
+}
+
+
+/* =========================================
+   INPUT WITH UNIT
+========================================= */
+
+.input-with-unit {
+  position: relative;
+}
+
+.input-with-unit input {
+  padding-right: 45px;
+}
+
+.input-with-unit span {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8c9b96;
+  font-size: 10px;
+}
+
+
+/* =========================================
+   TEXTAREAS
+========================================= */
+
+.health-textarea-group {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.health-textarea-group textarea {
+  padding: 12px 13px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   SAVE AREA
+========================================= */
+
+.profile-save-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 8px 2px;
+}
+
+.profile-save-area p {
+  color: #8a9995;
+  font-size: 10px;
+}
+
+.save-profile-button {
+  border: none;
+  border-radius: 9px;
+  background: #0d4f50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.save-profile-button:hover {
+  background: #123f43;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .profile-sidebar {
+    width: 70px;
+    padding: 25px 10px;
+  }
+
+  .profile-brand {
+    justify-content: center;
+    padding: 8px 0;
+  }
+
+  .profile-brand > span,
+  .profile-nav-title {
+    display: none;
+  }
+
+  .profile-nav-item {
+    justify-content: center;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .profile-nav-item span {
+    font-size: 18px;
+  }
+
+  .profile-home-link {
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 0;
+  }
+
+  .profile-home-link span {
+    font-size: 18px;
+  }
+
+  .health-profile-main {
+    width: calc(100% - 70px);
+    margin-left: 70px;
+    padding: 30px 22px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .profile-page-header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .profile-overview-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .edit-profile-button {
+    margin-left: 86px;
+  }
+
+  .health-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .health-profile-main {
+    padding: 25px 15px;
+  }
+
+  .profile-save-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .save-profile-button {
+    width: 100%;
+  }
+}
